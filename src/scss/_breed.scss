@@ -1,0 +1,422 @@
+.imageholder {
+  width: 100%;
+  cursor: pointer;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  background-size: cover !important;
+  background-color: #ccc !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.breedcolumn {
+  @include boxShadow;
+  border-radius: 20px;
+  position: relative;
+  height: 335px;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 15px;
+  border: 0;
+  .innerCollection {
+    transition: transform 0.28s ease;
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 55px);
+    border-radius: 16px 16px 0 0;
+    padding: 12px 20px;
+    background: rgb(98, 101, 102);
+    background: #1ed760;
+  }
+  &:hover {
+    .innerCollection {
+      transform: translate(-50%, 0);
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    min-height: 335px;
+    max-width: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .breedContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.slick-slide .breedcolumn {
+  box-shadow: none !important;
+}
+.nftbreedData {
+  h6.NftName {
+    color: #222;
+  }
+}
+
+.manageHeader {
+  text-align: left;
+  width: 100%;
+  h6.NftName {
+    color: #fff;
+  }
+  .headerData {
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 20px 15px;
+    position: relative;
+    .mediaICon {
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      margin-right: 15px;
+      display: flex;
+      background: #7366ff;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .dataListing {
+      padding-left: 55px;
+    }
+    h6 {
+      margin-bottom: 0px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      display: inline;
+      color: #fff;
+    }
+    h4 {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #fff;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      display: inline;
+    }
+    .dataBtn {
+      padding: 4px 12px;
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 12px;
+      background-color: #1ed760 !important;
+      color: #fff;
+      border-radius: 0.25rem;
+      display: table;
+      border-color: #1ed760 !important;
+      text-align: center;
+    }
+  }
+}
+
+.MuiSlider-markLabelActive {
+  color: #fff;
+}
+.Divider {
+  margin: 19px 53px 0 52px !important;
+  border: solid 0.5px #707070 !important;
+  height: 0 !important;
+}
+.mainHeading {
+  margin-bottom: 5px !important;
+  color: #1ed760;
+  font-size: 40px !important;
+}
+.mainDescription {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.collectionBox {
+  .collectionSet {
+    background: #fff;
+    @include boxShadow;
+    figure {
+      padding: 0;
+      margin: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // max-height: 192px;
+      overflow: hidden;
+      position: relative;
+    }
+    .NftCategory {
+      color: #1ed760;
+      font-size: 20px;
+    }
+  }
+}
+.collectionSlide {
+  p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 300;
+    opacity: 0.57;
+  }
+}
+h6.NftName {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #fff;
+}
+h6.NftDescrtiption {
+  color: #797979;
+  max-height: 68px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 22px;
+}
+h6.NftHighestBid {
+  color: #ffffff;
+  text-align: center;
+  max-height: 68px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 14px;
+  background: #1ed760;
+  line-height: 22px;
+  padding: 4px;
+  border-radius: 4px;
+}
+h6.NftAmount,
+h6.NftTime {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+h6.NftTime {
+  color: #da1d1d;
+}
+.horizontal {
+  .collectionSet {
+    transition: transform 0.28s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 15px;
+  }
+}
+.walletSet {
+  .collectionSet {
+    transition: transform 0.28s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    .NFTDetailsBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .NftData {
+      width: 110px;
+    }
+    .Nftdetail {
+      width: calc(100% - 5px);
+    }
+
+    .NftBidValue {
+      color: #fff;
+      font-size: 13px;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+    .bidTime {
+      font-size: 13px;
+    }
+    h2.MusicName {
+      color: #fff;
+      font-size: 13px;
+      max-height: 68px;
+      font-weight: 400;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-top: 8px;
+    }
+    h6.NftName {
+      color: #fff;
+      max-height: 68px;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+    }
+    h6.NftHead {
+      color: #fff;
+      font-size: 20px;
+      text-overflow: ellipsis;
+      white-space: normal;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+  }
+}
+.collectiondetails {
+  padding: 15px;
+}
+.userNameNFt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+}
+
+.BreedDetails {
+  .entry-meta {
+    background: #191515;
+    display: inline-block;
+    padding: 9px 18px 5px;
+    border-radius: 5px;
+    color: #fff;
+    p {
+      position: relative;
+      padding-right: 20px;
+      color: #fff;
+      &::before {
+        content: " ";
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        height: 20px;
+        width: 1px;
+      }
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.Nftowner {
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 1 0%;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  color: rgb(156, 156, 155);
+  font-size: 2rem;
+  font-weight: 500;
+  .Nftowner-image {
+    position: relative;
+    margin: 0 10px;
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 100%;
+  }
+  .Nftowner-details {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 600;
+    .Nftowner-name {
+      display: block;
+      max-width: 18rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #fff;
+      font-weight: 400;
+      font-size: 17px;
+    }
+  }
+}
+@media (min-width: 760px) {
+  .Nftowner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    flex-direction: row-reverse;
+    margin-bottom: 1.5rem;
+    .Nftowner-image {
+      margin-right: unset;
+      margin-left: 1.5rem;
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+    .Nftowner-details {
+      font-size: 17px;
+
+      text-align: right;
+    }
+  }
+}
+.pricing {
+  border: 1px solid #ececec;
+  padding: 15px;
+  h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+.walletCount {
+  div {
+    padding: 20px;
+  }
+  background: #fff;
+  border-radius: 7px;
+  margin-right: 15px;
+
+  h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .walletCount {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .mainHeading {
+    font-size: 24px !important;
+  }
+}
+
+.slick-slide img {
+  margin: 0 auto;
+  margin-top: 5%;
+}
+h6.descriptiontext {
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-all;
+}

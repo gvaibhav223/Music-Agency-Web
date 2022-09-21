@@ -1,0 +1,43 @@
+.Name{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+   
+   position: relative;
+}
+.Name2{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+ 
+   position: relative;
+}
+.text1{
+    width: 450px;
+}
+.text2{
+    width: 450px;
+    font-size: 17px;
+    border: 1.5px solid rgb(206, 204, 204);
+}
+.img{
+    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    background-image: url("Image.jpg");
+   border: 23px solid rgba(204, 203, 203, 0.945);
+   margin-bottom: 10px;
+}
+.imgmain{
+    height: 365px;
+    width: 550px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+ 
+    float: right;
+    position: relative;
+    top: -420px;
+    padding: 30px;
+ 
+}

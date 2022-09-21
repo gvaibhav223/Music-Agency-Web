@@ -1,0 +1,21 @@
+.cardsize2{
+    width: 370px;
+    height: 420px;
+    display: inline-block;
+    margin-right: 80px;
+   background-color: rgb(212, 211, 211);
+   margin-bottom: 40px;
+   box-shadow: 1px 1px 2px 2px rgb(150, 149, 149);
+}
+.image2
+{
+  width: 100%;
+  max-width: 130px;
+    height: 130px;
+    border-radius:80px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+body{
+    background-color: rgb(248, 245, 245);
+}

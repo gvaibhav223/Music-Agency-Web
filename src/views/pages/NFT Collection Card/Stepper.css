@@ -1,0 +1,24 @@
+body{
+    background-color:  #f2ffff;
+}
+.Typostep{
+color: rgb(59, 59, 59);
+font-size: 28px;
+}
+.Step{
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+.hr{
+    display: flex;
+ justify-content: center;
+ flex-wrap: nowrap;
+    width: 95%;
+background-color: rgba(117, 116, 116, 0.548);
+}
+.res{
+    display: flex;
+    
+    flex-wrap: nowrap;
+}
